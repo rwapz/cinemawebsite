@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <title>The Projection Room | Booking</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>The Projection Room</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="films.html">Movies</a></li>
+                    <li><a href="menu.html">Menu/Exclusives</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login/Register</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="booking-form">
+                <h2>Book Your Tickets</h2>
+                <form action="payment.html" method="POST">
+                    <label for="film">Select Film:</label>
+                    <select id="film" name="film" required>
+                        <option value="Transformers One">Transformers One</option>
+                        <option value="Terrifier 3">Terrifier 3</option>
+                        <option value="Venom: The Last Dance">Venom: The Last Dance</option>
+                        <option value="Saw 20th Anniversary">Saw 20th Anniversary</option>
+                    </select>
+
+                    <label for="time-slot">Choose a Time Slot:</label>
+                    <select id="time-slot" name="time-slot" required>
+                        <option value="12:00 PM">12:00 PM</option>
+                        <option value="3:00 PM">3:00 PM</option>
+                        <option value="6:00 PM">6:00 PM</option>
+                        <option value="9:00 PM">9:00 PM</option>
+                    </select>
+
+                    <label for="ticket-amount">Ticket Amount:</label>
+                    <input type="number" id="ticket-amount" name="ticket-amount" min="1" max="10" required>
+
+                    <label for="ticket-type">Select Ticket Type:</label>
+                    <select id="ticket-type" name="ticket-type" required>
+                        <option value="Saver">Saver</option>
+                        <option value="Regular">Regular</option>
+                        <option value="VIP">VIP</option>
+                    </select>
+
+                    <button type="submit">Proceed to Payment</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 The Projection Room. All rights reserved.</p>
+            <p>Contact: info@projectionroom.com | Follow us on social media!</p>
+        </footer>
+    </div>
+</body>
+</html>
