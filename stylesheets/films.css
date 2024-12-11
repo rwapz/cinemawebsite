@@ -1,0 +1,52 @@
+/* Basic reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Flexbox container for video and info */
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.video-container {
+    flex: 1;
+    min-width: 300px; /* Minimum width for the video */
+    margin-right: 20px;
+}
+
+.video-container video {
+    width: 100%; /* Make video responsive */
+    height: auto;
+}
+
+.info-container {
+    flex: 1;
+    min-width: 300px; /* Minimum width for the text */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Stack video above text */
+    }
+
+    .video-container {
+        margin-right: 0; /* No margin on small screens */
+        margin-bottom: 20px; /* Add some space between video and text */
+    }
+}
